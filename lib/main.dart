@@ -15,14 +15,13 @@ class BelajarGetData extends StatelessWidget {
     var result = await http.get(apiUrl);
     return json.decode(result.body)['products'];
   }
-  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
 
       appBar: AppBar(
-        title: Text('API - FLUTTER'),
+        title: Text('Belajar Menggunakan HTTPS'),
       ),
 
       body: Container(
